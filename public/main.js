@@ -13,3 +13,9 @@ slideBtn.forEach(btn => {
         delete activeSlide.dataset.active
     })
 })
+
+// Agregamos animaciones una vez que se cargó la página:
+window.onload = function() {  
+    document.querySelector('.hero-sign').classList.add('animate');
+    document.querySelector('.car-container').classList.add('animate');
+};

@@ -17,6 +17,20 @@ body {
     font-family: 'sao_torpesregular';
 }
 
+/* Animations: */
+
+@keyframes appear {
+    0% {
+        transform:translateX(80px);
+        opacity: .5;
+    }
+    100%{
+        transform:translateX(0px);
+        opacity: 1;
+    }
+}
+
+
 /* Header: */
 
 
@@ -71,6 +85,11 @@ header {
 
 .hero-sign {
     flex: 1;
+    animation-name: appear;
+    animation-duration: .2s;
+    animation-timing-function: ease-out;
+    animation-direction: normal;
+    animation-fill-mode: both;
 }
 
 .hero-sign h1 {
@@ -122,6 +141,11 @@ header {
     max-width: 800px; 
     height: 100%;
     margin: 0 auto; 
+    animation-name: appear;
+    animation-duration: .3s;
+    animation-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-direction: normal;
+    animation-fill-mode: both;
 }
 .carousel {
     height:400px;
